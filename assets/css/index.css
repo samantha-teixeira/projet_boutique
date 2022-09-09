@@ -4,34 +4,17 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+
+/*......................... BARRE DE NAVIGATION............................... */
+
 #navbar{
     display: flex;
     align-items: center;
-
+    border-bottom: 5px double black;
 }
 
 #logo{
-    width: 200px;
-}
-#burger{
-    width: 100%;
-    display: flex;
-    justify-content: right;
-    padding-right: 20px;
-    font-size: 35px;
-}
-
-#close{
-    width: 250px;
-    height: 120px;
-    background-color: pink;
-    align-items: center;
-    justify-content: flex-end;
-    position: absolute;
-    right: 0;
-    padding-right: 20px;
-    font-size: 35px;
-    display: none;
+    height: 115px;
 }
 
 #menu{
@@ -55,7 +38,6 @@
 
 li{
     list-style: none;
-    
 }
 
 a{
@@ -63,9 +45,34 @@ a{
     text-decoration: none; 
 }
 
+#burger{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    padding-right: 20px;
+    font-size: 35px;
+}
+
+#btn_burger{
+    cursor: pointer;
+}
+
+#close{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    padding-right: 20px;
+    font-size: 30px;
+}
+
+#btn_close{
+    cursor: pointer;
+}
+
 #menu_container{
-    position: fixed;
+    position: absolute;
     display: none;
+    margin-top: 119px;
     bottom: 0;
     left: 0;
     right: 0;
@@ -77,20 +84,36 @@ a{
     background-color: pink;
     position: absolute;
     right: 0;
-    padding-right: 20px;
-    width: 250px;
+    width: 100%;
     height: 250px;
     align-items: center;
-    justify-content: center;    
+    justify-content: space-between;    
 }
 
 #menu_liste2{
-    height: 80%;
+    height: 220px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     font-size: 25px;
+    padding: 15px 0;
+}
+
+.ligne{
+
+    width: 70%;
+    background-color: black;
+    border-color: black;
+
+}
+
+.lien_rose:hover{
+    color: pink;
+}
+
+.lien_blanc:hover{
+    color: white;
 }
 
 
@@ -106,3 +129,14 @@ a{
         display: none;
     }
 } */
+
+
+
+/* ............................SLIDER........................... */
+
+#header{
+    height: 250px;
+    /* background-color: aqua; */
+    background-image: url("./assets/images/fond.jpg");
+    background-size: cover;
+}
