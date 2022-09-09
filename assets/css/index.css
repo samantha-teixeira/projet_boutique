@@ -97,7 +97,7 @@ a{
 }
 
 
-
+/* 
 @media screen and (min-width:701px) {
     #menu{
         display: block;
@@ -108,4 +108,4 @@ a{
     #menu2{
         display: none;
     }
-}
+} */

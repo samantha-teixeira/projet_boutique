@@ -37,24 +37,19 @@ function fermerMenu() {
 };
 
 
+function myFunction1(largeScreen) {
+    if (largeScreen.matches) { // If media query matches
+        menu_container.style.display = 'none';
+        menu2.style.display="none";
+        burger.style.display = "none";
+        close.style.display = "none";
+        menu.style.display = "block";
+    } else {
+        burger.style.display = "flex";
+        menu.style.display = "none";
+    }
+}
 
-
-// close.addEventListener("click",fermerMenu);
-// console.log(close);
-
-// function fermerMenu() {
-    
-//     menu_container.style.display="none";
-//         menu2.style.display="none";
-//         close.style.display="none";
-//         burger.style.display="block";
-//     if(menu_container.style.display="block") {
-//         menu_container.style.display="none";
-//         console.log("test")
-//     }
-//     else {
-//         return false;
-//     }
-// }
-
-
+let largeScreen = window.matchMedia("(min-width: 701px)")
+myFunction1(largeScreen) // Call listener function at run time
+largeScreen.addListener(myFunction1)
