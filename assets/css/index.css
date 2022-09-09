@@ -22,7 +22,7 @@
     width: 100%;
     font-size: larger;
     align-items: center;
-    border:5px double pink;
+    border:5px double rgb(255, 227, 232);
     margin: 30px 20px;
     padding:0 60px ;
 }
@@ -59,7 +59,7 @@ a{
 
 #close{
     width: 100%;
-    display: flex;
+    display: none;
     justify-content: right;
     padding-right: 20px;
     font-size: 30px;
@@ -81,7 +81,7 @@ a{
 
 #menu2{
     display: none;
-    background-color: pink;
+    background-color: rgb(255, 227, 232);
     position: absolute;
     right: 0;
     width: 100%;
@@ -109,7 +109,7 @@ a{
 }
 
 .lien_rose:hover{
-    color: pink;
+    color: rgb(255, 227, 232);
 }
 
 .lien_blanc:hover{
@@ -136,7 +136,32 @@ a{
 
 #header{
     height: 250px;
-    /* background-color: aqua; */
-    background-image: url("./assets/images/fond.jpg");
+    background-image: url("fond2.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
 }
+
+h1{
+    width: max-content;
+    padding: 0 15px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(211, 211, 211, 0.345);
+    border-radius: 20px;
+}
+
+@media screen and (min-width:701px) {
+    #header{
+        background-image: none;
+        align-items: baseline;
+        background-color: rgb(255, 227, 232);
+    }
+    h1{
+        background-color: rgba(255, 255, 255, 0);
+    }
+} 

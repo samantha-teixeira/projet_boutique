@@ -4,6 +4,7 @@ let menu_container = document.getElementById("menu_container");
 let menu2 = document.getElementById("menu2");
 let close = document.getElementById("close");
 let btn_close = document.getElementById("btn_close");
+let header = document.getElementById("header");
 
 btn_burger.addEventListener("click",ouvrirMenu);
 
