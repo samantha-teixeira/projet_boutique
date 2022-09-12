@@ -10,6 +10,7 @@
 </head>
 
 <body>
+
     <nav id="navbar">
         <div><img src="./assets/images/logo.png" alt="logo" id="logo"></div>
         <div id="menu">
@@ -41,13 +42,13 @@
     <div id="containerformulaire">
         <div id="formulaire">
             <label for="nom" class="nom">Nom</label>
-            <input type="text" name="nom" class="inputnom">
+            <input type="text" name="nom" class="inputnom" required>
             <label for="prenom" class="prenom">Prénom</label>
-            <input type="text" name="prenom" class="inputprenom">
+            <input type="text" name="prenom" class="inputprenom" required>
             <label for="tel" class="tel">Tel</label>
-            <input type="number" name="tel" class="inputtel">
+            <input type="tel" name="tel" class="inputtel" required>
             <label for="email" class="mail">E-mail</label>
-            <input type="email" name="email" class="inputmail">
+            <input type="email" name="email" class="inputmail" required>
             <label for="Message" class="message">Message</label>
             <textarea name="message" cols="30" rows="10" class="inputmessage"></textarea>
             <div id="btn_envoyer">
@@ -55,6 +56,7 @@
             </div>
         </div>
     </div>
+
 
     <footer>
         <p>@copyright 2022</p>
