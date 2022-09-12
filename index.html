@@ -15,8 +15,8 @@
         <div id="menu">
             <ul id="menu_liste">
                 <li><a href="./index.html" class="lien_rose">Accueil</a></li>
-                <li><a href="./assets/html/boutique.html" class="lien_rose">Boutique</a></li>
-                <li><a href="./assets/html/contact.html" class="lien_rose">Contact</a></li>
+                <li><a href="./boutique.html" class="lien_rose">Boutique</a></li>
+                <li><a href="./contact.html" class="lien_rose">Contact</a></li>
             </ul>
         </div>
         <div id="burger">
@@ -32,25 +32,45 @@
         <ul id="menu_liste2">
             <li><a href="./index.html" class="lien_blanc">Accueil</a></li>
             <hr class="ligne">
-            <li><a href="./assets/html/boutique.html" class="lien_blanc">Boutique</a></li>
+            <li><a href="./boutique.html" class="lien_blanc">Boutique</a></li>
             <hr class="ligne">
-            <li><a href="./assets/html/contact.html" class="lien_blanc">Contact</a></li>
+            <li><a href="./contact.html" class="lien_blanc">Contact</a></li>
         </ul>
     </div>
 
     <header id="header">
         <h1>Vos envies sur-mesure</h1>
         <div id="slider">
-            <div id="btn_left"><span>&lt</span></div>
-            <div id="btn_right"><span>&gt</span></div>
-            <div class="slide">
-                <div class="slide-img">
-                    <img alt="testimonial" src="./images/testimonial1.jpg" />
-                </div>
-            </div>
-        </div>
+            <h1 id="titre2">Vos envies sur-mesure</h1>
+            <img src="./assets/images/slider/cakeball.jpg" alt="cakeball" id="slide">
+            <div id="precedent" onclick="ChangeSlide(-1)">&lt</div>
+            <div id="suivant" onclick="ChangeSlide(1)">&gt</div>
         </div>
     </header>
+
+    <main>
+        <div class="card">
+            <img src="./assets/images/cards/Nudecake.jpg" alt="Nude Cake" style="width:100%">
+            <h2>Nude Cake</h2>
+            <p class="price">5&#8364 /part</p>
+            <p class="descriptif">Composé de plusieurs étages avec biscuit "Molly Cake" et d'un fourage au choix. Décorations avec des fleurs naturelle.</p>
+            <p><button>Commander</button></p>
+        </div>
+        <div class="card">
+            <img src="./assets/images/cards/Layercake.jpg" alt="Layer Cake" style="width:100%">
+            <h2>Layer Cake</h2>
+            <p class="price">6.5&#8364 /part</p>
+            <p class="descriptif">Composé de plusieurs étages avec biscuit "Molly Cake" et d'un fourage au choix, puis recouvert d'une ganache ou de pâte à sucre. Décorations en pâte à sucre en fonction du thème.</p>
+            <p><button>Commander</button></p>
+        </div>
+        <div class="card">
+            <img src="./assets/images/cards/popcake.jpg" alt="Pop Cake" style="width:100%">
+            <h2>Pop Cake</h2>
+            <p class="price">2.5&#8364 /unitée</p>
+            <p class="descriptif">Composé de brisure de biscuits et ganache. Recouvert de glaçage et décoré en fonction du thème.</p>
+            <p><button>Commander</button></p>
+        </div>
+    </main>
 
     <script src="./assets/js/index.js"></script>
 </body>

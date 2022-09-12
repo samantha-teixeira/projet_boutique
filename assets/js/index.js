@@ -52,3 +52,16 @@ function Function1(largeScreen) {
 let largeScreen = window.matchMedia("(min-width: 701px)")
 Function1(largeScreen) // Call listener function at run time
 largeScreen.addListener(Function1)
+
+
+var slide = new Array("assets/images/slider/anniversaire.jpg", "assets/images/slider/cupcake.jpg", "assets/images/slider/entremet.jpg", "assets/images/slider/mariage.jpg","assets/images/slider/rosecake.jpg","assets/images/slider/cakeball.jpg");
+var numero = 0;
+
+function ChangeSlide(sens) {
+    numero = numero + sens;
+    if (numero < 0)
+        numero = slide.length - 1;
+    if (numero > slide.length - 1)
+        numero = 0;
+    document.getElementById("slide").src = slide[numero];
+}
