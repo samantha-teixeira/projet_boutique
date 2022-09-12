@@ -87,7 +87,8 @@ a{
     width: 100%;
     height: 250px;
     align-items: center;
-    justify-content: space-between;    
+    justify-content: space-between; 
+    border-bottom: 5px double black;   
 }
 
 #menu_liste2{
@@ -249,6 +250,105 @@ main{
     opacity: 0.7;
   }
 
+/* ............................FORMULAIRE DE CONTACT...................... */
+input,textarea{
+    border-radius: 5px;
+}
+
+#btn_envoyer{
+    grid-column: 1/3;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+button{
+    width: 100px;
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#containerformulaire{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+#formulaire{
+    width: 80%;
+    display: grid;
+    grid-template-columns:2fr 3fr;
+    grid-template-rows: min-content;
+    padding: 20px;
+    row-gap: 20px;
+    background-color: rgb(255, 227, 232);
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.332);
+    
+}
+
+.nom{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.inputnom{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.prenom{
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.inputprenom{
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.tel{
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.inputtel{
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.mail{
+    grid-column: 1;
+    grid-row: 4;
+}
+
+.inputmail{
+    grid-column: 2;
+    grid-row: 4;
+}
+
+.message{
+    grid-column: 1;
+    grid-row: 5;
+}
+
+.inputmessage{
+    grid-column: 2;
+    grid-row: 5;
+}
+
+/* .............................FOOTER................................ */
+
+footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    border-top: #000 5px double;
+    background-color:rgba(211, 211, 211, 0.345);
+}
 
 @media screen and (min-width:701px) {
     #header{
@@ -268,4 +368,7 @@ main{
         flex-direction: row;
         justify-content: center;
     }
-} 
+
+    #formulaire{
+        width: 50%;
+    }

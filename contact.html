@@ -38,35 +38,27 @@
         </ul>
     </div>
 
-    <div id="formulaire">
-        <div class="row1">
-            <div class="col1">
-                <label for="nom">Nom</label>
-                <input type="text" name="nom">
-            </div>
-            <div class="col2">
-                <label for="prenom">Prénom</label>
-                <input type="text" name="prenom">
-            </div>
-        </div>
-        <div class="row2">
-            <div class="col1">
-                <label for="tel">Numéro de téléphone</label>
-                <input type="number" name="tel">
-            </div>
-            <div class="col2">
-                <label for="email">Adresse e-mail</label>
-                <input type="email" name="email">
+    <div id="containerformulaire">
+        <div id="formulaire">
+            <label for="nom" class="nom">Nom</label>
+            <input type="text" name="nom" class="inputnom">
+            <label for="prenom" class="prenom">Prénom</label>
+            <input type="text" name="prenom" class="inputprenom">
+            <label for="tel" class="tel">Tel</label>
+            <input type="number" name="tel" class="inputtel">
+            <label for="email" class="mail">E-mail</label>
+            <input type="email" name="email" class="inputmail">
+            <label for="Message" class="message">Message</label>
+            <textarea name="message" cols="30" rows="10" class="inputmessage"></textarea>
+            <div id="btn_envoyer">
+                <button type="submit">Envoyer</button>
             </div>
         </div>
-        <div class="row3">
-            <div class="col">
-                <label for="Message">Message</label>
-                <textarea name="message" id="message" cols="30" rows="10"></textarea>
-            </div>
-        </div>
-      
     </div>
+
+    <footer>
+        <p>@copyright 2022</p>
+    </footer>
 
     <script src="./assets/js/index.js"></script>
 </body>
