@@ -32,12 +32,12 @@ if (isset($_POST['submit']) && !empty($_POST['username']) && !empty($_POST['l_na
 
 <body>
     <nav id="navbar">
-        <div><img src="../images/logo.png" alt="logo" id="logo"></div>
+        <div><a href="accueil.php"><img src="../images/logo.png" alt="logo" id="logo"></a></div>
         <div id="menu">
             <ul id="menu_liste">
-                <li><a href="accueil.php" class="lien_rose">Accueil</a></li>
                 <li><a href="boutique.php" class="lien_rose">Boutique</a></li>
-                <li><a href="contact.php" class="lien_rose">Contact</a></li>
+                <li><a href="contact.php" class="lien_rose">Nous Contacter</a></li>
+                <li><a href="book.php" class="lien_rose">Nos réalisations</a></li>
             </ul>
         </div>
             <div id="burger">
@@ -53,11 +53,12 @@ if (isset($_POST['submit']) && !empty($_POST['username']) && !empty($_POST['l_na
 
     <div id="menu2">
         <ul id="menu_liste2">
-            <li><a href="accueil.php" class="lien_blanc">Accueil</a></li>
-            <hr class="ligne">
             <li><a href="boutique.php" class="lien_blanc">Boutique</a></li>
             <hr class="ligne">
-            <li><a href="contact.php" class="lien_blanc">Contact</a></li>
+            <li><a href="contact.php" class="lien_blanc">Nous Contacter</a></li>
+            <hr class="ligne">
+            <li><a href="book.php" class="lien_blanc">Nos réalisations</a></li>
+
         </ul>
     </div>
 
@@ -77,7 +78,7 @@ if (isset($_POST['submit']) && !empty($_POST['username']) && !empty($_POST['l_na
                 <input type="email" name="mail" class="row4_2" required>
 
                 <label for="password" class="row5">Mot de passe</label>
-                <input type="password" name="password" class="row5_2" required>
+                <input type="password" name="password" class="row5_2_1" required>
 
                 <div id="btn_envoyer">
                     <button type="submit" name="submit" value="Valider">Valider</button>
@@ -85,6 +86,10 @@ if (isset($_POST['submit']) && !empty($_POST['username']) && !empty($_POST['l_na
             </form>
         </div>
     </div>
+
+    <footer id="footer_formulaire">
+        <p>@copyright 2022</p>
+    </footer>
 
     <script src="../js/index.js"></script>
 </body>

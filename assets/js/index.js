@@ -15,6 +15,7 @@ function ouvrirMenu() {
         menu2.style.display="block";
         burger.style.display = "none";
         close.style.display="flex";
+        header.style.display = "none";
     }
     else {
         return false;
@@ -28,6 +29,7 @@ function fermerMenu() {
     menu2.style.display= 'none';
     burger.style.display= "flex";
     close.style.display= "none";
+    header.style.display = "flex";
 
     if (menu_container.style.display = 'block') {
         menu_container.style.display = 'none';
@@ -54,7 +56,7 @@ Function1(largeScreen) // Call listener function at run time
 largeScreen.addListener(Function1)
 
 
-var slide = new Array("assets/images/slider/anniversaire.jpg", "assets/images/slider/cupcake.jpg", "assets/images/slider/entremet.jpg", "assets/images/slider/mariage.jpg","assets/images/slider/rosecake.jpg","assets/images/slider/cakeball.jpg");
+var slide = new Array("../images/slide/anniversaire.jpg", "../images/slide/cupcake.jpg", "../images/slide/entremet.jpg", "../images/slide/mariage.jpg","../images/slide/rosecake.jpg","../images/slide/cakeball.jpg");
 var numero = 0;
 
 function ChangeSlide(sens) {
@@ -65,3 +67,18 @@ function ChangeSlide(sens) {
         numero = 0;
     document.getElementById("slide").src = slide[numero];
 }
+
+// let btn_connexion = document.getElementById("btn_connexion");
+// let connect = document.getElementById("connect");
+
+
+// btn_connexion.addEventListener('click', connexion);
+
+// function connexion() {
+//     if(connect.style.display="block") {
+//         connect.style.display="none"
+//     }
+//     else {
+//         return false;
+//     }
+// };

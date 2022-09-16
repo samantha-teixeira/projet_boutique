@@ -17,12 +17,12 @@ $pdo = pdo_connect();
 
 <body>
     <nav id="navbar">
-        <div><img src="../images/logo.png" alt="logo" id="logo"></div>
+        <div><a href="accueil.php"><img src="../images/logo.png" alt="logo" id="logo"></a></div>
         <div id="menu">
             <ul id="menu_liste">
-                <li><a href="accueil.php" class="lien_rose">Accueil</a></li>
                 <li><a href="boutique.php" class="lien_rose">Boutique</a></li>
-                <li><a href="contact.php" class="lien_rose">Contact</a></li>
+                <li><a href="contact.php" class="lien_rose">Nous Contacter</a></li>
+                <li><a href="book.php" class="lien_rose">Nos réalisations</a></li>
             </ul>
         </div>
             <div id="burger">
@@ -38,11 +38,11 @@ $pdo = pdo_connect();
 
     <div id="menu2">
         <ul id="menu_liste2">
-            <li><a href="accueil.php" class="lien_blanc">Accueil</a></li>
-            <hr class="ligne">
             <li><a href="boutique.php" class="lien_blanc">Boutique</a></li>
             <hr class="ligne">
-            <li><a href="contact.php" class="lien_blanc">Contact</a></li>
+            <li><a href="contact.php" class="lien_blanc">Nous Contacter</a></li>
+            <hr class="ligne">
+            <li><a href="book.php" class="lien_blanc">Nos réalisations</a></li>
         </ul>
     </div>
 
@@ -64,6 +64,9 @@ $pdo = pdo_connect();
         </div>
     </div>
 
+    <footer id="footer_formulaire">
+        <p>@copyright 2022</p>
+    </footer>
     
     <script src="../js/index.js"></script>
 </body>
@@ -81,8 +84,10 @@ if(isset($_POST['submit']) && !empty($_POST['username']) && !empty($_POST['passw
 {
     $_SESSION['username'] = $username;
     header('Location:profil.php');
+    // echo "<script> connexion(); </script>";
+ 
 } else {
-    echo 'Pseudo ou mot de passe incorrect!';
+    echo '<p class="invalid">Pseudo ou mot de passe incorrect!</p>';
 }
 }
 ?>

@@ -10,18 +10,18 @@
     <link rel="stylesheet" href="../css/index.css">
 </head>
 
-<body id="body_contact">
+<body>
     <div id="connexion">
         Se connecter <a href="./connexion.php"><i class="fa-solid fa-user" id="btn_connexion"></i></a>
     </div>
 
     <nav id="navbar">
-        <div><img src="../images/logo.png" alt="logo" id="logo"></div>
+        <div><a href="accueil.php"><img src="../images/logo.png" alt="logo" id="logo"></a></div>
         <div id="menu">
             <ul id="menu_liste">
-                <li><a href="accueil.php" class="lien_rose">Accueil</a></li>
                 <li><a href="boutique.php" class="lien_rose">Boutique</a></li>
-                <li><a href="contact.php" class="lien_rose">Contact</a></li>
+                <li><a href="contact.php" class="lien_rose">Nous Contacter</a></li>
+                <li><a href="book.php" class="lien_rose">Nos réalisations</a></li>
             </ul>
         </div>
         <div id="burger">
@@ -35,15 +35,16 @@
 
     <div id="menu2">
         <ul id="menu_liste2">
-            <li><a href="accueil.php" class="lien_blanc">Accueil</a></li>
-            <hr class="ligne">
             <li><a href="boutique.php" class="lien_blanc">Boutique</a></li>
             <hr class="ligne">
-            <li><a href="contact.php" class="lien_blanc">Contact</a></li>
+            <li><a href="contact.php" class="lien_blanc">Nous Contacter</a></li>
+            <hr class="ligne">
+            <li><a href="book.php" class="lien_blanc">Nos réalisations</a></li>
         </ul>
     </div>
 
     <div id="main">
+        <p class="text_contact">Pour toutes demandes spécifiques ou devis sur-mesure, merci de nous contacter via ce formulaire.</p>
         <div id="containerformulaire">
             <div id="formulaire">
                 <label for="nom" class="row1">Nom</label>
@@ -64,7 +65,7 @@
     </div>
 
 
-    <footer id="footer_contact">
+    <footer id="footer_formulaire">
         <p>@copyright 2022</p>
     </footer>
 

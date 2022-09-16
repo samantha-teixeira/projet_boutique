@@ -14,7 +14,7 @@
 <body>
 
     <div id="connexion">
-        <span id="connect">Se connecter</span><a href="./connexion.php"><i class="fa-solid fa-user" id="btn_connexion"></i></a>
+        Se connecter <a href="./connexion.php"><i class="fa-solid fa-user" id="btn_connexion"></i></a>
     </div>
 
     <nav id="navbar">
@@ -47,9 +47,8 @@
         </ul>
     </div>
 
-
     <main>
-   
+
     </main>
 
 
