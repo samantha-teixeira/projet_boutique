@@ -1,3 +1,4 @@
+<?php?>
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -6,36 +7,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sam Cake</title>
-    <link rel="stylesheet" href="./assets/css/index.css">
+    <script src="https://kit.fontawesome.com/c14c1b087e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/index.css">
 </head>
 
 <body>
 
+    <div id="connexion">
+        Se connecter <a href="./connexion.php"><i class="fa-solid fa-user" id="btn_connexion"></i></a>
+    </div>
+
     <nav id="navbar">
-        <div><img src="./assets/images/logo.png" alt="logo" id="logo"></div>
+        <div><img src="../images/logo.png" alt="logo" id="logo"></div>
         <div id="menu">
             <ul id="menu_liste">
-                <li><a href="./index.html" class="lien_rose">Accueil</a></li>
-                <li><a href="./boutique.html" class="lien_rose">Boutique</a></li>
-                <li><a href="./contact.html" class="lien_rose">Contact</a></li>
+                <li><a href="accueil.php" class="lien_rose">Accueil</a></li>
+                <li><a href="boutique.php" class="lien_rose">Boutique</a></li>
+                <li><a href="contact.php" class="lien_rose">Contact</a></li>
             </ul>
         </div>
-        <div id="burger">
-            <p id="btn_burger">&#9776</p>
-        </div>
-        <div id="close">
-            <p id="btn_close">&#10006</p>
+            <div id="burger">
+                <p id="btn_burger">&#9776</p>
+            </div>
+
+            <div id="close">
+                <p id="btn_close">&#10006</p>
+            </div>
         </div>
         <div id="menu_container"></div>
     </nav>
 
     <div id="menu2">
         <ul id="menu_liste2">
-            <li><a href="./index.html" class="lien_blanc">Accueil</a></li>
+            <li><a href="accueil.php" class="lien_blanc">Accueil</a></li>
             <hr class="ligne">
-            <li><a href="./boutique.html" class="lien_blanc">Boutique</a></li>
+            <li><a href="boutique.php" class="lien_blanc">Boutique</a></li>
             <hr class="ligne">
-            <li><a href="./contact.html" class="lien_blanc">Contact</a></li>
+            <li><a href="contact.php" class="lien_blanc">Contact</a></li>
         </ul>
     </div>
 
@@ -43,7 +51,7 @@
         <h1>Vos envies sur-mesure</h1>
         <div id="slider">
             <h1 id="titre2">Vos envies sur-mesure</h1>
-            <img src="./assets/images/slider/cakeball.jpg" alt="cakeball" id="slide">
+            <img src="../images/slider/cakeball.jpg" alt="cakeball" id="slide">
             <div id="precedent" onclick="ChangeSlide(-1)">&lt</div>
             <div id="suivant" onclick="ChangeSlide(1)">&gt</div>
         </div>
@@ -51,7 +59,7 @@
 
     <main>
         <div class="card">
-            <img src="./assets/images/cards/Nudecake.jpg" alt="Nude Cake" style="width:100%">
+            <img src="../images/cards/Nudecake.jpg" alt="Nude Cake" style="width:100%">
             <h2>Nude Cake</h2>
             <p class="price">5&#8364 /part</p>
             <p class="descriptif">Composé de plusieurs étages avec biscuit "Molly Cake" et d'un fourage au choix.
@@ -59,7 +67,7 @@
             <p><button>Commander</button></p>
         </div>
         <div class="card">
-            <img src="./assets/images/cards/Layercake.jpg" alt="Layer Cake" style="width:100%">
+            <img src="../images/cards/Layercake.jpg" alt="Layer Cake" style="width:100%">
             <h2>Layer Cake</h2>
             <p class="price">6.5&#8364 /part</p>
             <p class="descriptif">Composé de plusieurs étages avec biscuit "Molly Cake" et d'un fourage au choix,
@@ -68,7 +76,7 @@
             <p><button>Commander</button></p>
         </div>
         <div class="card">
-            <img src="./assets/images/cards/popcake.jpg" alt="Pop Cake" style="width:100%">
+            <img src="../images/cards/popcake.jpg" alt="Pop Cake" style="width:100%">
             <h2>Pop Cake</h2>
             <p class="price">2.5&#8364 /unitée</p>
             <p class="descriptif">Composé de brisure de biscuits et ganache. Recouvert de glaçage et décoré en
@@ -82,7 +90,7 @@
         <p>@copyright 2022</p>
     </footer>
 
-    <script src="./assets/js/index.js"></script>
+    <script src="../js/index.js"></script>
 </body>
 
 </html>

@@ -4,6 +4,15 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+#body_contact{
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+}
+
+#footer_contact{
+    position: fixed;
+    bottom: 0;
+}
 
 /*......................... BARRE DE NAVIGATION............................... */
 
@@ -15,6 +24,25 @@
 
 #logo{
     height: 115px;
+}
+
+#navbar2{
+    display: block;
+}
+
+#connexion{
+    width: 100%;
+    font-size: smaller;
+    display: flex;
+    justify-content:flex-end;
+    align-items: flex-end;
+    padding-top: 5px;
+}
+
+#btn_connexion{
+    font-size: 20px;
+    padding-right: 20px;
+    padding-left: 5px;
 }
 
 #menu{
@@ -250,9 +278,10 @@ main{
     opacity: 0.7;
   }
 
-/* ............................FORMULAIRE DE CONTACT...................... */
+/* ............................FORMULAIRES...................... */
 input,textarea{
     border-radius: 5px;
+    height: min-content;
 }
 
 #btn_envoyer{
@@ -260,13 +289,16 @@ input,textarea{
     display: flex;
     justify-content: center;
     padding-top: 20px;
+    align-items: flex-end;
 }
 
 button{
-    width: 100px;
+    width: max-content;
+    padding: 5px;
     background-color: white;
     border-radius: 5px;
     cursor: pointer;
+    margin: 0 15px;
 }
 
 #containerformulaire{
@@ -284,55 +316,54 @@ button{
     row-gap: 20px;
     background-color: rgb(255, 227, 232);
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.332);
-    
 }
 
-.nom{
+.row1{
     grid-column: 1;
     grid-row: 1;
 }
 
-.inputnom{
+.row1_2{
     grid-column: 2;
     grid-row: 1;
 }
 
-.prenom{
+.row2{
     grid-column: 1;
     grid-row: 2;
 }
 
-.inputprenom{
+.row2_2{
     grid-column: 2;
     grid-row: 2;
 }
 
-.tel{
+.row3{
     grid-column: 1;
     grid-row: 3;
 }
 
-.inputtel{
+.row3_3{
     grid-column: 2;
     grid-row: 3;
 }
 
-.mail{
+.row4{
     grid-column: 1;
     grid-row: 4;
 }
 
-.inputmail{
+.row4_2{
     grid-column: 2;
     grid-row: 4;
 }
 
-.message{
+.row5{
     grid-column: 1;
     grid-row: 5;
 }
 
-.inputmessage{
+.row5_2{
     grid-column: 2;
     grid-row: 5;
 }
@@ -341,10 +372,6 @@ button{
     footer{
     padding: 10px;
     width: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
     display: flex;
     justify-content: center;
     border-top: #000 5px double;
@@ -375,56 +402,57 @@ button{
         grid-template-columns:1fr 3fr 1fr 1fr 3fr;
     }
 
-    .nom{
+    .row1{
         grid-column: 1;
         grid-row: 1;
     }
     
-    .inputnom{
+    .row1_2{
         grid-column: 2;
         grid-row: 1;
     }
     
-    .prenom{
+    .row2{
         grid-column: 4;
         grid-row: 1;
     }
     
-    .inputprenom{
+    .row2_2{
         grid-column: 5;
         grid-row: 1;
     }
     
-    .tel{
+    .row3{
         grid-column: 1;
         grid-row: 2;
     }
     
-    .inputtel{
+    .row3_2{
         grid-column: 2;
         grid-row: 2;
     }
     
-    .mail{
+    .row4{
         grid-column: 4;
         grid-row: 2;
     }
     
-    .inputmail{
+    .row4_2{
         grid-column: 5;
         grid-row: 2;
     }
     
-    .message{
+    .row5{
         grid-column: 1;
         grid-row: 3;
     }
     
-    .inputmessage{
+    .row5_2{
         grid-column: 2 / 7;
         grid-row: 3;
     }
 
     #btn_envoyer{
         grid-column: 1/7;
-    }
+    } 
+}
